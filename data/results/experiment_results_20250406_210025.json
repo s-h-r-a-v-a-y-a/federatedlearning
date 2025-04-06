@@ -1,0 +1,143 @@
+{
+  "experiment_id": "20250406_210025",
+  "timestamp": "2025-04-06T21:00:25.415257",
+  "config": {
+    "output": "data/results",
+    "attacks": [
+      "all"
+    ],
+    "visualize": true
+  },
+  "results": {
+    "federated_learning": {
+      "ddos": {
+        "accuracy": 0.9230068023701187,
+        "precision": 0.9534469182732962,
+        "recall": 0.9515575741973687,
+        "f1_score": 0.9525013093291331,
+        "false_positives": 0.07173804862529803,
+        "detection_time": 1.6068608987909379,
+        "privacy_preserved": true
+      },
+      "poisoning": {
+        "accuracy": 0.7819727708580323,
+        "precision": 0.8212652163441636,
+        "recall": 0.7901428328058144,
+        "f1_score": 0.8054034791117778,
+        "false_positives": 0.18982692991989386,
+        "detection_time": 3.332686896889082,
+        "privacy_preserved": true
+      },
+      "malware": {
+        "accuracy": 0.9079479645371965,
+        "precision": 0.9092239224781974,
+        "recall": 0.8446462115399053,
+        "f1_score": 0.8757461874366295,
+        "false_positives": 0.131916899243314,
+        "detection_time": 1.8845913630588826,
+        "privacy_preserved": true
+      }
+    },
+    "signature_based": {
+      "ddos": {
+        "accuracy": 0.9487882068718162,
+        "precision": 0.9093349871600473,
+        "recall": 0.8295791510185533,
+        "f1_score": 0.867628056011837,
+        "false_positives": 0.031159528875514646,
+        "detection_time": 1.143953807863585,
+        "privacy_preserved": false
+      },
+      "poisoning": {
+        "accuracy": 0.6469175650407615,
+        "precision": 0.6709186876410547,
+        "recall": 0.445516664630641,
+        "f1_score": 0.535463975317521,
+        "false_positives": 0.31370340874713226,
+        "detection_time": 7.2117382030574,
+        "privacy_preserved": false
+      },
+      "malware": {
+        "accuracy": 0.7323687981593658,
+        "precision": 0.7972063848435186,
+        "recall": 0.6106976870085518,
+        "f1_score": 0.6915983908647153,
+        "false_positives": 0.1309165697723016,
+        "detection_time": 3.79479865584098,
+        "privacy_preserved": false
+      }
+    },
+    "anomaly_based": {
+      "ddos": {
+        "accuracy": 0.917474369354172,
+        "precision": 0.8203484998607378,
+        "recall": 0.9024347650187556,
+        "f1_score": 0.8594360309822228,
+        "false_positives": 0.23890378945484028,
+        "detection_time": 1.5352834254123469,
+        "privacy_preserved": false
+      },
+      "poisoning": {
+        "accuracy": 0.7308573104317672,
+        "precision": 0.6719276652809671,
+        "recall": 0.7639261432982819,
+        "f1_score": 0.714979626542081,
+        "false_positives": 0.2990713548412799,
+        "detection_time": 6.488405528126555,
+        "privacy_preserved": false
+      },
+      "malware": {
+        "accuracy": 0.8198081507751286,
+        "precision": 0.718920142399372,
+        "recall": 0.898115093738634,
+        "f1_score": 0.7985886969583623,
+        "false_positives": 0.21598754545730064,
+        "detection_time": 2.174016925235193,
+        "privacy_preserved": false
+      }
+    },
+    "comparison": {
+      "average_metrics": {
+        "federated_learning": {
+          "accuracy": 0.8709758459217825,
+          "precision": 0.894645352365219,
+          "recall": 0.8621155395143628,
+          "f1_score": 0.8778836586258468,
+          "false_positives": 0.13116062592950198,
+          "detection_time": 2.2747130529129675
+        },
+        "signature_based": {
+          "accuracy": 0.7760248566906478,
+          "precision": 0.7924866865482069,
+          "recall": 0.6285978342192488,
+          "f1_score": 0.6982301407313578,
+          "false_positives": 0.1585931691316495,
+          "detection_time": 4.050163555587321
+        },
+        "anomaly_based": {
+          "accuracy": 0.8227132768536892,
+          "precision": 0.7370654358470256,
+          "recall": 0.8548253340185572,
+          "f1_score": 0.7910014514942221,
+          "false_positives": 0.2513208965844736,
+          "detection_time": 3.3992352929246983
+        }
+      },
+      "privacy_preservation": {
+        "federated_learning": 0.95,
+        "signature_based": 0.4,
+        "anomaly_based": 0.55
+      },
+      "adaptability": {
+        "federated_learning": 0.9,
+        "signature_based": 0.4,
+        "anomaly_based": 0.75
+      },
+      "resource_usage": {
+        "federated_learning": 0.7,
+        "signature_based": 0.3,
+        "anomaly_based": 0.6
+      }
+    }
+  }
+}
